@@ -41,6 +41,8 @@ module.exports = async ({ graphql, boundActionCreators }, userOptions) => {
 		let { fileAbsolutePath, fields } = edges[i].node
 		let { template, slug } = fields
 
+		slug = `${options.slugPath || ''}${slug}`
+
 		let component = await findTemplate(template, options)
 		createPage({
 			path: slug,

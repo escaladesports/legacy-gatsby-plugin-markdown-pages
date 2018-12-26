@@ -49,6 +49,7 @@ plugins: [
          path: './src/pages', // Path to markdown files to be converted to pages
          templatePath: './src/templates', // Path to page templates
          template: 'default', // Default template to use if none is supplied
+         slugPath: 'content/posts', // This would make all pages be located at /content/posts/...
       }
    }
 ]
